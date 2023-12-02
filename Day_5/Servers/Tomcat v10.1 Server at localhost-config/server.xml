@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
->>>>>>> 3fd61c2cda82844777e680a35d74c252f0555355
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -144,11 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-<<<<<<< HEAD
-      <Context docBase="RedirectingServlet" path="/RedirectingServlet" reloadable="true" source="org.eclipse.jst.jee.server:RedirectingServlet"/><Context docBase="ForwordServlet" path="/ForwordServlet" reloadable="true" source="org.eclipse.jst.jee.server:ForwordServlet"/></Host>
-=======
-      <Context docBase="RedirectingServlet" path="/RedirectingServlet" reloadable="true" source="org.eclipse.jst.jee.server:RedirectingServlet"/></Host>
->>>>>>> 3fd61c2cda82844777e680a35d74c252f0555355
+      <Context docBase="ForwordingServOutOfcontext" path="/ForwordingServOutOfcontext" reloadable="true" source="org.eclipse.jst.jee.server:ForwordingServOutOfcontext"/><Context docBase="ForwardingServOutOfcontext1" path="/ForwardingServOutOfcontext1" reloadable="true" source="org.eclipse.jst.jee.server:ForwardingServOutOfcontext1"/></Host>
     </Engine>
   </Service>
 </Server>

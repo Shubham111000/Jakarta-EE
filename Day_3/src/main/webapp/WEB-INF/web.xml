@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
   <display-name>Servlet_databaseAssignment</display-name>
@@ -24,4 +25,32 @@
     <servlet-name>ViewStudent</servlet-name>
     <url-pattern>/ViewStudent</url-pattern>
   </servlet-mapping>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Servlet_databaseAssignment</display-name>
+  <welcome-file-list>
+    <welcome-file>Student.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AddStudent</display-name>
+    <servlet-name>AddStudent</servlet-name>
+    <servlet-class>AddStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudent</servlet-name>
+    <url-pattern>/AddStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewStudent</display-name>
+    <servlet-name>ViewStudent</servlet-name>
+    <servlet-class>ViewStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewStudent</servlet-name>
+    <url-pattern>/ViewStudent</url-pattern>
+  </servlet-mapping>
+>>>>>>> 3fd61c2cda82844777e680a35d74c252f0555355
 </web-app>

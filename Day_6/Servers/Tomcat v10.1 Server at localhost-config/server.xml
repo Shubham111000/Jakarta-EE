@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> 2c4d81bb484423bb8b811524b8076914bd6a96b0
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -140,7 +144,11 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
+<<<<<<< HEAD
       <Context docBase="Request_Filter" path="/Request_Filter" reloadable="true" source="org.eclipse.jst.jee.server:Request_Filter"/><Context docBase="Debuging" path="/Debuging" reloadable="true" source="org.eclipse.jst.jee.server:Debuging"/><Context docBase="Load" path="/Load" reloadable="true" source="org.eclipse.jst.jee.server:Load"/><Context docBase="AccessBusinessLogic" path="/AccessBusinessLogic" reloadable="true" source="org.eclipse.jst.jee.server:AccessBusinessLogic"/><Context docBase="AccessBusinessLogic2" path="/AccessBusinessLogic2" reloadable="true" source="org.eclipse.jst.jee.server:AccessBusinessLogic2"/></Host>
+=======
+      <Context docBase="Request_Filter" path="/Request_Filter" reloadable="true" source="org.eclipse.jst.jee.server:Request_Filter"/></Host>
+>>>>>>> 2c4d81bb484423bb8b811524b8076914bd6a96b0
     </Engine>
   </Service>
 </Server>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
   <display-name>Request_Filter</display-name>
@@ -47,4 +48,55 @@
     <servlet-name>LoginServ</servlet-name>
     <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Request_Filter</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginServ</display-name>
+    <servlet-name>LoginServ</servlet-name>
+    <servlet-class>LoginServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServ</servlet-name>
+    <url-pattern>/LoginServ</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>SecondFilter</display-name>
+    <filter-name>SecondFilter</filter-name>
+    <filter-class>mypack.SecondFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SecondFilter</filter-name>
+    <url-pattern>/SecondFilter</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>SecondFilter</filter-name>
+    <servlet-name>LoginServ</servlet-name>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
+  <filter>
+    <display-name>FirstFilter</display-name>
+    <filter-name>FirstFilter</filter-name>
+    <filter-class>mypack.FirstFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FirstFilter</filter-name>
+    <url-pattern>/FirstFilter</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>FirstFilter</filter-name>
+    <servlet-name>LoginServ</servlet-name>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
+>>>>>>> 2c4d81bb484423bb8b811524b8076914bd6a96b0
 </web-app>

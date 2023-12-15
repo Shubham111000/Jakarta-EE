@@ -13,16 +13,16 @@ public class Dept
 	}
 	
 	int id;
-	String loaction;
+	String location;
 	String deptName;
 	
 	@Column(name="Loc")
 	public String getLoaction() {
-		return loaction;
+		return location;
 	}
 	
-	public void setLoaction(String loaction) {
-		this.loaction = loaction;
+	public void setLoaction(String location) {
+		this.location = location;
 	}
 	
 	@Column(name="DeptName")
@@ -41,7 +41,7 @@ public class Dept
 
 	@Override
 	public String toString() {
-		return "Dept [id=" + id + ", loaction=" + loaction + ", deptName=" + deptName + "]";
+		return "Dept [id=" + id + ", loaction=" + location + ", deptName=" + deptName + "]";
 	}
 	
 	

@@ -28,9 +28,9 @@ public class DataServ extends HttpServlet {
 		cfg.configure("hibernate.cfg.xml");
 		SessionFactory factory=cfg.buildSessionFactory();
 		Session session=factory.openSession();
-		String location1 = request.getParameter("location");
-		SelectionQuery<?> query1=session.createSelectionQuery("from Dept d where d.location= :location1");
-		//query1.setParameter("location1",request.getParameter("location"));
+		//String location1 = request.getParameter("location");
+		SelectionQuery<?> query1=session.createSelectionQuery("from Dept d where d.location= :location1",Dept.class);
+		query1.setParameter("location1",request.getParameter("location"));
 		List<?> mylist2=(List<?>) query1.list();
 		request.setAttribute("list", mylist2);
 		RequestDispatcher rd=request.getRequestDispatcher("Data.jsp");

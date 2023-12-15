@@ -15,6 +15,7 @@ Location:<input type=text name="location">
 <br>
  <c:forEach var="a" items="${requestScope.list}">
  ${a}
+ <br>
  </c:forEach>
 </form>
 </body>

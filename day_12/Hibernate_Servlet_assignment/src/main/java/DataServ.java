@@ -11,6 +11,7 @@ import java.util.*;
 import org.hibernate.cfg.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.hibernate.query.SelectionQuery;
 
 /**
@@ -29,8 +30,8 @@ public class DataServ extends HttpServlet {
 		SessionFactory factory=cfg.buildSessionFactory();
 		Session session=factory.openSession();
 		//String location1 = request.getParameter("location");
-		SelectionQuery<?> query1=session.createSelectionQuery("from Dept d where d.location= :location1",Dept.class);
-		query1.setParameter("location1",request.getParameter("location"));
+		Query<?> query1=session.createQuery("from Dept d where d.location=:str", Dept.class);
+		query1.setParameter("str", request.getParameter("location"));
 		List<?> mylist2=(List<?>) query1.list();
 		request.setAttribute("list", mylist2);
 		RequestDispatcher rd=request.getRequestDispatcher("Data.jsp");

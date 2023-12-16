@@ -9,7 +9,7 @@ public class StudentDAOFileImpl implements StudentDAO {
 	@Override
 	public void addStudent(Student ref) {
 		try {
-			FileOutputStream fos=new FileOutputStream("Student.txt");
+			FileOutputStream fos=new FileOutputStream("F:\\Student.txt");
 			ObjectOutputStream oos=new ObjectOutputStream(fos);
 			oos.writeObject(ref);
 			System.out.println("Done With Student");			

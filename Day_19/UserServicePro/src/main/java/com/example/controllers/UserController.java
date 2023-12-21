@@ -29,7 +29,7 @@ public class UserController
 		// so if there are thousands of services running on different
 		// servers it will become difficult to keep a track of 
 		// server names
-		List<?> contacts=template.getForObject("http://localhost:9003/contact/"+user.getId(), List.class);
+		List<?> contacts=template.getForObject("http://CONTACTSERVICE/contact/"+user.getId(), List.class);
 		user.setContacts(contacts);
 		return user;
 

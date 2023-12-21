@@ -40,7 +40,8 @@ public class MySecurityConfig
 	 }
 	
 	
-	  @Bean public DaoAuthenticationProvider daoAuthenticationProvider() {
+	  @Bean 
+	  public DaoAuthenticationProvider daoAuthenticationProvider() {
 	  System.out.println("inside daoAuthenticationProvider method");
 	  DaoAuthenticationProvider provider=new DaoAuthenticationProvider();
 	  provider.setUserDetailsService(customUserDetailsService); return provider; }
